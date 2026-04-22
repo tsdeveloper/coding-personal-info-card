@@ -1,8 +1,45 @@
 @use './reset';
 :root {
   font-size: 10px;
+  color: white;
 }
 
 body {
   font-family: 'Montserrat', sans-serif;
   }
+
+.profile-cards {
+  display: flex;
+  justify-content: space-evenly;
+  margin-top: 50vh;
+  transform: translateY(-50%);
+  background-color: #171111;
+  padding: 2rem 4rem;
+
+  &__card {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+    &--info__name {
+      font-size: 2rem;
+      font-weight: 700;
+      margin-bottom: 1rem;
+      color: rgba(123 69 177 /6);
+    }
+
+    &--info__role {
+      font-size: 1.5rem;
+      font-weight: 200;
+      margin-bottom: 1rem;
+    }
+
+  }
+
+
+  &__card--img {
+    height: 20rem;
+    width: 20rem;
+    object-fit: cover;
+    border-radius: 50%;
+  }
+}
